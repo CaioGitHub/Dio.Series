@@ -2,13 +2,12 @@ using System;
 using System.Collections.Generic;
 using Dio.Series.interfaces;
 
-
-namespace Dio.Series
+namespace Dio.Series.Classes
 {
-    public class serieRepositorio : irepositorio<series>
+    public class SerieRepositorio : IRepositorio<Serie>
     {
-        private List<series> listaSerie = new List<series>();
-        public void Atualiza(int id, series objeto)
+         private List<Serie> listaSerie = new List<Serie>();
+        public void Atualiza(int id, Serie objeto)
         {
             listaSerie[id] = objeto;
         }
@@ -18,12 +17,12 @@ namespace Dio.Series
             listaSerie[id].Excluir();
         }
 
-        public void Insere(series objeto)
+        public void Insere(Serie objeto)
         {
             listaSerie.Add(objeto);
         }
 
-        public List<series> Lista()
+        public List<Serie> Lista()
         {
             return listaSerie;
         }
@@ -33,9 +32,10 @@ namespace Dio.Series
             return listaSerie.Count;
         }
 
-        public series RetornaPorId(int id)
+        public Serie RetornaPorId(int id)
         {
             return listaSerie[id];
         }
     }
+    
 }

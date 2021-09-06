@@ -1,8 +1,8 @@
 using System;
 
-namespace Dio.Series
+namespace Dio.Series.Classes
 {
-    public class series : entidadeBase
+    public class Serie : EntidadeBase
     {
         // Atributos
         private Genero Genero { get; set; }
@@ -16,7 +16,7 @@ namespace Dio.Series
 		private bool Excluido { get; set; }
 
         // Metodos
-        public series (int id, Genero genero, string titulo, string descricao, int ano)
+        public Serie (int id, Genero genero, string titulo, string descricao, int ano)
 		{
 			this.Id = id;
 			this.Genero = genero;

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace Dio.Series.interfaces
 {
-    public interface irepositorio<T>
+    public interface IRepositorio<T>
     {
         List<T> Lista();
         T RetornaPorId(int id);        
