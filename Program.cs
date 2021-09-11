@@ -161,6 +161,7 @@ namespace Dio.Series
             string opcaoUsuario = Console.ReadLine().ToUpper();
             Console.WriteLine();
             return opcaoUsuario;
+        
         }
 
         static Serie dados()
